@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="by www.andreas-heine.net">
+    <title>{{ context.title }}</title>
+    <!-- <link rel="stylesheet" href="/static/css/normalize.css"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="polaroid">
+            {% if context.imagelist %}
+                {% for each in context.imagelist %}
+                    <li>
+                        <a href="/static/dslrBooth/{{ context.title }}/Prints/{{ each.0 }}">
+                            <img src="/static/dslrBooth/{{ context.title }}/Prints/thumb/{{ each.1 }}" alt="{{ each.0 }}">
+                        </a>
+                        <span></span>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <li>
+                    <a href="/static/img/default/default.jpg">
+                        <img src="/static/img/default/default_thumb.jpg" alt="">
+                    </a>
+                    <span>Empty</span>
+                </li>
+                <li>
+                    <a href="/static/img/default/default.jpg">
+                        <img src="/static/img/default/default_thumb.jpg" alt="">
+                    </a>
+                    <span>Empty</span>
+                </li>
+                <li>
+                    <a href="/static/img/default/default.jpg">
+                        <img src="/static/img/default/default_thumb.jpg" alt="">
+                    </a>
+                    <span>Empty</span>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+    <script src="/static/js/style.js"></script>
+</body>
+</html>

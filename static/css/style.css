@@ -1,0 +1,90 @@
+body {
+  background-image: url("/static/img/background.jpg");
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  text-align: center;
+  max-width: 100%;
+}
+
+ul.polaroid {
+  max-width: 100%;
+  margin: 2em auto;
+}
+ul.polaroid li {
+  list-style: none;
+  max-width: 250px;
+  display: inline-block;
+  background-color: white;
+  background: linear-gradient(110deg, white, oldlace);
+  box-shadow: 4px 4px 15px gray;
+  vertical-align: top;
+  margin: 20px;
+}
+ul.polaroid a {
+  text-decoration: none;
+}
+ul.polaroid img {
+  max-width: 90%;
+  height: auto;
+  margin: 5% 5% 0 5%;
+}
+ul.polaroid span {
+  display: inline-block;
+  width: 90%;
+  min-height: 54px;
+  margin: 0 5% 5% 5%;
+  text-align: center;
+  color: silver;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+/* Font by: Kimberly Geswein, License: Open Font License  http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web */
+body{font-family:'Architects Daughter';font-size: 16px;padding:25px;background-color: rgb(0, 0, 0);}
+
+
+ul {
+    max-width: 40%;
+    margin: 2em auto;
+}
+ul li {
+    list-style: none;
+    max-width: 80px;
+    display: inline-block;
+    background-color: white;
+    background: linear-gradient(110deg, white, oldlace);
+    box-shadow: 4px 4px 15px gray;
+    vertical-align: top;
+    margin: 0px;
+    position: relative;
+    transform: rotate(-2deg);
+    transition: all ease 0.3s;
+}
+
+ul li:nth-child(2n+1) {transform: rotate(8deg);}
+ul li:nth-child(3n+2) {transform: rotate(-6deg);}
+ul li:nth-child(5n+3) {transform: rotate(-3deg);}
+ul li:nth-child(7n+5) {transform: rotate(5deg);}
+ul li:nth-child(11n+7) {transform: rotate(-2deg);}
+
+@media (min-width: 767px) {
+  ul li:hover {
+    transform: scale(1.3) rotate(0deg);
+    z-index: 999;
+  }
+}
+
+ul img {
+    max-width: 90%;
+    height: auto;
+    margin: 5% 5% 0 5%;
+}
+ul span {
+    display: inline-block;
+    width: 90%;
+    min-height: 17px;
+    margin: 0 5% 5% 5%;
+    text-align: center;
+}
