@@ -11,3 +11,5 @@ Key facts full version:
 -gallery adapts to the settings of dslrBooth like active project and more  
 -featuring Rest-API  
 -updating without reloading the page  
+  
+If you are intrestet in getting the full version contact me!
