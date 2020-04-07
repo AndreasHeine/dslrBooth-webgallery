@@ -12,4 +12,4 @@ Key facts full version:
 -featuring Rest-API  
 -updating without reloading the page  
   
-If you are intrestet in getting the full version contact me!
+Interested? Contact me: info@andreas-heine.net
